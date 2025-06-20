@@ -118,4 +118,4 @@ We're actively seeking:
 
 ## Created by
 **Enijeshiku Elijah Eniola** – Engineering student at KWASU  
-*“Nigeria’s first locally-powered smart pedestrian system — designed to save lives, one crossing at a time.”*
+*“Nigeria’s locally-powered smart pedestrian system — designed to save lives, one crossing at a time.”*
