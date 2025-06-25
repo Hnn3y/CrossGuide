@@ -1,60 +1,59 @@
 # CrossGuide
 
-**Smart, Self-Pwered Road Safety System Designed for Urban & Rural Nigeria**
+**Smart, Self-Powered Road Safety System Designed for Urban & Rural Nigeria**
 
 ---
 
-## About the project
-CrossGuide is a smart zebra crossing that protects pedestrians especially scholchldren using:
-- **Piezoelectric Sensors**: Detects pedestrians and vehicles and harvest footstep energy.
-- **Motion sensors** to detect crossing intentions and vehicle directions.
-- **LED visual alerts** to ensure pedestrians safety and incoming vehicles.
-- **Self-charging battery system** for 24/7 operation.
-- **Solar Hybrid System** for sustainable energy use and consistent energy supply.
-- **GSM module** for real-time alerts to traffic control centers to report high-traffic or dangerous crossings.
-- **Smart Data Logging**: Tracks activity to assist with roUTE plannning and traffic management.
+## About the Project
+
+CrossGuide is a smart pedestrian crossing system designed to reduce pedestrian accidents in Nigeria, especially in school zones and high-traffic areas. It combines renewable energy harvesting, AI-driven logic, and real-time alerts to create an adaptive safety infrastructure that works even in off-grid environments.
+
+Key features include:
+- Piezoelectric energy harvesting from footsteps or vehicle pressure
+- Motion and ultrasonic sensors for detecting pedestrian intent and vehicle approach
+- LED visual alerts to warn drivers
+- Self-charging battery system for 24/7 operation
+- Optional solar power for hybrid energy reliability
+- GSM module for SMS alerts to traffic control centers
+- Smart data logging for route planning and analysis
+- AI-based vehicle speed detection and auto-deploy safety bump
+- Crowd-based pedestrian control using people counters and wait timers
 
 ---
 
-## Problem Solving
+## Problem Solved
 
-**CrossGuide** addresses the critical issue of pedestrian safety in Nigeria, where road accidents are prevalent due to inadequate infrastructure and lack of awareness. By integrating smart technology, it aims to offer an energy independent , low maintenence solution that is modular and community buildable.
+Nigeria records high numbers of road-related fatalities, often due to lack of visible, responsive crossing systems. Current zebra crossings are passive and frequently ignored. CrossGuide solves this by providing a proactive, self-powered, low-cost, and modular system that ensures pedestrian safety without relying on the national grid.
 
 ---
 
 ## SDG Alignment
-- **SDG 3**: Good Health and Well-being - Reducing pedestrian accidents.
-- **SDG 11**: Sustainable Cities and Communities - Enhancing urban infrastructure.
-- **SDG 9**: Industry, Innovation, and Infrastructure - Promoting smart city solutions.
-- **SDG 13**: Climate Action - Utilizing renewable energy sources.
 
---- 
+- SDG 3: Good Health and Well-being  
+- SDG 9: Industry, Innovation, and Infrastructure  
+- SDG 11: Sustainable Cities and Communities  
+- SDG 13: Climate Action  
 
-## TECH Stack and Architecture
-- **Arduino Uno**
-- **Piezoelectric Discs Sensors**
-- **PIR Motion Sensors**
-- **LED Strip**
-- **Relay Module**
-- **Rechargeable 12V Battery**
-- **Diodes + Capacitors (Rectifier Circuit)**
-- **GSM Module (SIMB00L)**
-
-
-| Component                | Description                                  |
-|-------------------------|----------------------------------------------|
-| Arduino Uno / ESP32     | System controller                            |
-| Piezoelectric Discs     | Energy harvesting from pressure              |
-| PIR + Ultrasonic Sensor | Detects motion & vehicle proximity           |
-| LED Strip (12V)         | Visual road alerts                           |
-| Relay Module            | Switching control for LED alerts             |
-| 12V Rechargeable Battery| Stores harvested or solar energy             |
-| Solar Panel (optional)  | Supplementary clean energy                   |
-| GSM Module (SIM800L)    | Sends SMS with usage/alerts to authority     |
-| Rectifier + Capacitors  | Converts AC piezo output to DC for storage   |
 ---
 
-## Cost Estimate 
+## Technology Stack and Architecture
+
+| Component                 | Description                                   |
+|--------------------------|-----------------------------------------------|
+| Arduino Uno / ESP32      | Microcontroller and logic control             |
+| Piezoelectric Discs      | Harvest energy from pressure                  |
+| PIR + Ultrasonic Sensor  | Detect motion and vehicle proximity           |
+| LED Strip (12V)          | Visual alerts to drivers                      |
+| Relay Module             | Controls high-power components                |
+| Rechargeable 12V Battery | Stores energy for continuous operation        |
+| Solar Panel (optional)   | Adds renewable power source                   |
+| GSM Module (SIM800L)     | Sends SMS alerts and status data              |
+| Laser Checkpoints        | Measure vehicle speed                         |
+| AI Logic (Microcontroller-based) | Controls safety bump + crowd logic   |
+
+---
+
+## Estimated Cost (Nigeria-based Pricing)
 
 | Component                 | Estimated Cost (₦)     |
 |--------------------------|-------------------------|
@@ -70,52 +69,82 @@ CrossGuide is a smart zebra crossing that protects pedestrians especially scholc
 | Cement + Sand (base tile)| ₦3,000 – ₦6,000          |
 | **Total Estimate**       | **₦30,000 – ₦55,000**    |
 
---- 
+---
 
 ## System Diagram
 
-```
 Piezo + Solar --> Rectifier --> Battery --> Arduino --> Relay --> LED/Buzzer
-                                |
-                              Sensors (PIR/Ultrasonic)
-                                |
-                             GSM Module (SMS Alerts)
-```
+|
+Sensors (PIR/Ultrasonic)
+|
+GSM Module (SMS Alerts and Data Logging)
+|
+AI Logic --> Safety Bump / Crowd Control Timer
 
 ---
 
-## Features
-- Self-sustaining energy system
-- Traffic-aware motion response
-- Modular, scalable installation
-- Real-time data communication
-- Safe even in off-grid areas
+## Key Features
 
---- 
-
-##  Impact Measurement Plan
-- Pre/post-installation accident reports
-- Pedestrian usage counters (infrared beam)
-- SMS logs: daily/weekly crossing counts
-- Community surveys on confidence/safety
+- Works without grid electricity
+- Automatically responds to pedestrian activity
+- Detects vehicle speed with laser sensors
+- Deploys safety bump when cars overspeed
+- Tracks and logs crossing activity for urban planning
+- Triggers crossings based on pedestrian crowd size or wait duration
 
 ---
 
-##  Use Case
-- Government deployments in school zones
-- NGOs and urban safety organizations
-- Community-driven smart city initiatives
+## Impact Measurement
+
+- Compare accident reports before and after deployment
+- Count pedestrian crossings using beam counters
+- Log SMS alerts and system activity
+- Conduct user surveys on safety and usability
 
 ---
 
-##  Looking for Partners
-We're actively seeking:
-- City governments for pilot deployments
-- Urban planners and safety NGOs
-- STEM investment partners and grant sponsors
+## Use Cases
+
+- High-risk school zones
+- Government road safety pilot programs
+- NGO-led urban safety initiatives
+- Community smart infrastructure projects
+
+---
+
+## Call for Partners
+
+We are seeking:
+- Traffic agencies and ministries for pilot testing
+- Investors and foundations supporting road safety
+- Community organizations and education stakeholders
+- Engineering labs for advanced prototype support
 
 ---
 
 ## Created by
-**Enijeshiku Elijah Eniola** – Engineering student at KWASU  
-*“Nigeria’s locally-powered smart pedestrian system — designed to save lives, one crossing at a time.”*
+
+**Enijeshiku Elijah Eniola (Henney)**  
+Engineering Student, KWASU  
+
+“Nigeria’s locally-powered smart pedestrian system — designed to save lives, one crossing at a time.”
+
+---
+
+## Repository Contents
+
+- Wiring Diagram (PNG)
+- Source Code (Arduino)
+- System Architecture
+- Pitch Deck (PDF)
+- Demo Video (linked externally)
+
+---
+
+##  Links
+-  [Wiring Diagram (PNG)](./schematics/crossguide_wiring.png)
+-  [Source Code](./src/main.ino)
+-  [Video Demo (Coming Soon)](https://example.com)
+-  [Pitch Deck PDF](./docs/CrossGuide_Pitch.pdf)
+
+---
